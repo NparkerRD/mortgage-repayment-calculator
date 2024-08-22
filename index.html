@@ -3,33 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="dist/css/main.css">
   <title>Frontend Mentor | Mortgage repayment calculator</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="main flex-center">
+    <div class="calculator-container">
+      <div class="calculator__header">
+        <h1 class="calculator__title">Mortgage Calculator</h1>
+        <div class="btn--text btn--clear">Clear All</div>
+      </div>
 
-  Mortgage Calculator
-  Clear All
+      <form class="calculator__inputs">
+        <div class="input-group">
+          <label for="mortgage-amount" class="input-label">Mortgage Amount</label>
+          <input type="number" class="calculator__input calculator__input--right-aligned" name="mortgage-amount" id="mortgage-amount">
+        </div>
+        <div class="input-group">
+          <label for="mortgage-term" class="input-label">Mortgage Term</label>
+          <input type="number" class="calculator__input" name="mortgage-term" id="mortgage-term">
+        </div>
+        <div class="input-group">
+          <label for="interest-rate" class="input-label">Interest Rate</label>
+          <input type="number" class="calculator__input" name="interest-rate" id="interest-rate">
+        </div>
 
-  Mortgage Amount
-
-  Mortgage Term
-
-  Interest Rate
-
-  Mortgage Type
-  Repayment
-  Interest Only
-
-  Calculate Repayments
+        <fieldset class="input-group input-multiple">
+          Mortgage Type
+          <div class="radio-group">
+            <input type="radio" name="mortgage-type" id="repayment">
+            <label for="repayment">Repayment</label>
+          </div>
+          <div class="radio-group">
+            <input type="radio" name="mortgage-type" id="interest-only">
+            <label for="interest-only">Interest Only</label>
+          </div>
+        </fieldset>
+        <button class="btn btn--primary">Calculate Repayments</button>
+      </form>
+    </div>
+  </main>
 
   <!-- Empty results start -->
 

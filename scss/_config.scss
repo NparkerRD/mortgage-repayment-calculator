@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+// Custom colors
+$cc-lime: hsl(61, 70%, 52%);
+$cc-red: hsl(4, 69%, 50%);
+$cc-white: hsl(0, 0%, 100%);
+$cc-slate--100: hsl(202, 86%, 94%);
+$cc-slate--300: hsl(203, 41%, 72%);
+$cc-slate--500: hsl(200, 26%, 54%);
+$cc-slate--700: hsl(200, 24%, 40%);
+$cc-slate--900: hsl(202, 55%, 16%);
+
+// Font style
+$ff-main: "Plus Jakarta Sans", sans-serif;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+// Flex classes
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
