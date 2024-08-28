@@ -12,6 +12,8 @@ $cc-slate--900: hsl(202, 55%, 16%);
 
 // Font style
 $ff-main: "Plus Jakarta Sans", sans-serif;
+$fw-med: 500;
+$fw-bold: 700;
 
 *,
 *::before,
@@ -19,10 +21,19 @@ $ff-main: "Plus Jakarta Sans", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $ff-main;
 }
 
 body {
     min-height: 100vh;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 // Flex classes
@@ -39,4 +50,8 @@ body {
 .flex-col {
     display: flex;
     flex-direction: column;
+}
+
+.hidden {
+    display: none;
 }
